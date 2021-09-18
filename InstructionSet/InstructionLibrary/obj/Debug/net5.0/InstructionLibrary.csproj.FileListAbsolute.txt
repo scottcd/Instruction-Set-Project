@@ -1,0 +1,12 @@
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\bin\Debug\net5.0\InstructionLibrary.deps.json
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\bin\Debug\net5.0\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\bin\Debug\net5.0\ref\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\bin\Debug\net5.0\InstructionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.csproj.AssemblyReference.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.GeneratedMSBuildEditorConfig.editorconfig
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.AssemblyInfoInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.AssemblyInfo.cs
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.csproj.CoreCompileInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\ref\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.pdb
