@@ -11,7 +11,6 @@ namespace InstructionLibrary {
         and = 0x03,
         or = 0x04,
         nor = 0x05,
-        xor = 0x0F,
         lw = 0x06,
         sw = 0x07,
         beq = 0x08,
@@ -21,6 +20,7 @@ namespace InstructionLibrary {
         ori = 0x0C,
         sll = 0x0D,
         srl = 0x0E,
+        xor = 0x0F,
         stop = 0x00,
 
         R_Type = add | sub | and | or | nor | xor,

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "InstructionLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/InstructionLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructionLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "InstructionLibrary/1.0.0": {
+      "type": "project",
+      "path": "../InstructionLibrary/InstructionLibrary.csproj",
+      "msbuildProject": "../InstructionLibrary/InstructionLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "InstructionLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Chandler\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
+              "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

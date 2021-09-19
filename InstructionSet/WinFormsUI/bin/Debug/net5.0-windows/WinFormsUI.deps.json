@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WinFormsUI/1.0.0": {
+        "dependencies": {
+          "InstructionLibrary": "1.0.0"
+        },
+        "runtime": {
+          "WinFormsUI.dll": {}
+        }
+      },
+      "InstructionLibrary/1.0.0": {
+        "runtime": {
+          "InstructionLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WinFormsUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructionLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
