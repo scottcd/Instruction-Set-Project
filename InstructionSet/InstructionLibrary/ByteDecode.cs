@@ -72,8 +72,6 @@ namespace InstructionLibrary
                 opcode = (byte)(intruction >> 12 & 0x000f );
                 operand = (short)(intruction & 0x0fff);
 
-                Console.WriteLine($"");
-
                 halt = true;
             }
 
