@@ -20,7 +20,7 @@ namespace ConsoleUI {
             
             InstructionTable x = (InstructionTable)instructionValue;
 
-            Console.WriteLine($"{x}");
+            Console.WriteLine($"{x} test");
         }
     }
 }
