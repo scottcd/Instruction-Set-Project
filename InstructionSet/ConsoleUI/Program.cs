@@ -9,11 +9,12 @@ namespace ConsoleUI {
              2. decode hex -> instruction
              3. print instructions
              */
+
             ushort[] bytes = { 9145, 4512, 21, 78 };
 
-            Decode dc = new Decode(bytes);
+            ByteDecode dc = new ByteDecode(bytes);
 
-            Console.WriteLine(InstructionTable.add);
+            Console.WriteLine($"{InstructionTable.add}  {dc}");
         }
     }
 }

@@ -16,12 +16,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleUI
+namespace InstructionLibrary
 {
     /// <summary>
     /// Class Decode.
     /// </summary>
-    class Decode
+    public class ByteDecode
     {
 
         /// <summary>
@@ -39,10 +39,10 @@ namespace ConsoleUI
 
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Decode"/> class.
+        /// Initializes a new instance of the <see cref="ByteDecode"/> class.
         /// </summary>
         /// <param name="_byteStrem">The byte strem.</param>
-        public Decode(ushort[] _byteStrem)
+        public ByteDecode(ushort[] _byteStrem)
         {
 
             byteStream = _byteStrem;
@@ -71,6 +71,8 @@ namespace ConsoleUI
                 intruction = byteStream[0];
                 opcode = (byte)(intruction >> 12 & 0x000f );
                 operand = (short)(intruction & 0x0fff);
+
+                Console.WriteLine($"");
 
                 halt = true;
             }
