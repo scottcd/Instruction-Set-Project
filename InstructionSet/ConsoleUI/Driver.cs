@@ -12,15 +12,16 @@ namespace ConsoleUI {
 
             Console.WriteLine("Input (AS BINARY STREAM):\n\n");
             string hexString = Console.ReadLine();
-            int instructionValue = int.Parse(hexString, System.Globalization.NumberStyles.HexNumber);
             
-            ushort[] bytes = { 9145, 4512, 21, 78 };
-
-            ByteDecode dc = new ByteDecode(bytes);
+            var instructionValues = ISADecoder.ParseToInt(hexString);
             
-            InstructionTable x = (InstructionTable)instructionValue;
+            string output = "";
 
-            Console.WriteLine($"{x} test");
+            for (int i = 0; i < instructionValues.Length; i++) {
+                output += $"{(InstructionTable)instructionValues[i]} {instructionValues[i]} \n";
+            }
+            
+            Console.WriteLine(output);
         }
     }
 }

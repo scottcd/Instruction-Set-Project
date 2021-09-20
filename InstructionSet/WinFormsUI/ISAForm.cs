@@ -13,8 +13,16 @@ namespace WinFormsUI {
     public partial class ISAForm : Form {
         public ISAForm() {
             InitializeComponent();
-            inputBox.Text = ((int)InstructionTable.addi).ToString("X");
-            outputBox.Text = InstructionTable.addi.ToString();
+            
+            inputBox.Text = "1A EE 4A A1 2A AA A3 5F 00";
+            var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
+
+            string output = "";
+            for (int i = 0; i < instructionValues.Length; i++) {
+                output += $"{(InstructionTable)instructionValues[i]} {instructionValues[i]} \n";
+            }
+
+            outputBox.Text = output;
         }
 
     }
