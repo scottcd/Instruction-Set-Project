@@ -31,7 +31,7 @@ namespace ConsoleUI {
                     instructions.Add(new H_Instruction(instruction));
                 }
                 if (instructionValues[i] == 10) {
-                    // get the next 4 digits
+                    // get the next 4 digits now
                     instruction = new int[4] {
                         instructionValues[i],
                         instructionValues[i++],

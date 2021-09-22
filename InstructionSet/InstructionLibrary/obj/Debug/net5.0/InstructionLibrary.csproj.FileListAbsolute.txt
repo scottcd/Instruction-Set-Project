@@ -22,3 +22,15 @@ C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\Instructio
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\ref\InstructionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.pdb
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\bin\Debug\net5.0\InstructionLibrary.deps.json
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\bin\Debug\net5.0\InstructionLibrary.dll
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\bin\Debug\net5.0\ref\InstructionLibrary.dll
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\bin\Debug\net5.0\InstructionLibrary.pdb
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.csproj.AssemblyReference.cache
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.AssemblyInfoInputs.cache
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.AssemblyInfo.cs
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.csproj.CoreCompileInputs.cache
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.dll
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\ref\InstructionLibrary.dll
+C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\InstructionLibrary\obj\Debug\net5.0\InstructionLibrary.pdb
