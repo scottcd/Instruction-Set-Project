@@ -14,12 +14,12 @@ namespace ConsoleUI {
             List<IInstruction> instructions = ISADecoder.DecodeHex(instructionValues);
 
             string output = "";
-            foreach (var item in instructions) {
-                if (item is H_Instruction) {
-                    output += $"{item.Opcode}\n";
+            foreach (var instruction in instructions) {
+                if (instruction is H_Instruction) {
+                    output += $"{instruction}\n";
                 }
                 else {
-                    output += $"{item.Opcode} {(Registers)item.Instruction[1]} {(Registers)item.Instruction[2]} {item.Instruction[3]}\n";
+                    output += $"{instruction}\n";
                 }
             }
             Console.WriteLine(output);

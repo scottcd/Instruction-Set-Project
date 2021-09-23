@@ -16,5 +16,8 @@ namespace InstructionLibrary.InstructionModels {
             Instruction = hex;
         }
 
+        public override string ToString() {
+            return $"{Opcode}";
+        }
     }
 }
