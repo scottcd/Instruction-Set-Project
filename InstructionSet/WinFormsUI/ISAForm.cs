@@ -25,7 +25,7 @@ namespace WinFormsUI {
                     output += $"{item.Opcode}\n";
                 }
                 else {
-                    output += $"{item.Opcode} {item.Instruction[1]} {item.Instruction[2]} {item.Instruction[3]}\n";
+                    output += $"{item.Opcode} {(Registers)item.Instruction[1]} {(Registers)item.Instruction[2]} {item.Instruction[3]}\n";
                 }
             }
 

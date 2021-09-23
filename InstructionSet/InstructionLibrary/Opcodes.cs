@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace InstructionLibrary {
-    public enum Opcode {
+    public enum Opcodes {
         add = 0x1,
         sub = 0x2,
         and = 0x3,
@@ -30,21 +30,21 @@ namespace InstructionLibrary {
         H_Type
     }
     public static class OpcodeTypes {
-        public static OpcodeType GetType(this Opcode opcode) {
+        public static OpcodeType GetType(this Opcodes opcode) {
             switch (opcode) {
-                case Opcode.stop:
+                case Opcodes.stop:
                     return OpcodeType.H_Type;
-                case Opcode.add:
+                case Opcodes.add:
                     return OpcodeType.R_Type;
-                case Opcode.sub:
+                case Opcodes.sub:
                     return OpcodeType.R_Type;
-                case Opcode.and:
+                case Opcodes.and:
                     return OpcodeType.R_Type;
-                case Opcode.or:
+                case Opcodes.or:
                     return OpcodeType.R_Type;
-                case Opcode.nor:
+                case Opcodes.nor:
                     return OpcodeType.R_Type;
-                case Opcode.xor:
+                case Opcodes.xor:
                     return OpcodeType.R_Type;
                 default:
                     return OpcodeType.I_Type;

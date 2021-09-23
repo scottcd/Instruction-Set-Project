@@ -35,7 +35,7 @@ namespace InstructionLibrary {
             int[] instruction;
 
             for (int i = 0; i < instructionValues.Length - 1; i++) {
-                Opcode opcode = (Opcode)instructionValues[i];
+                Opcodes opcode = (Opcodes)instructionValues[i];
                 OpcodeType opcodeType = OpcodeTypes.GetType(opcode);
 
                 if (opcodeType == OpcodeType.H_Type) {
