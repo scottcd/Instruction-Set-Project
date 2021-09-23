@@ -4,61 +4,25 @@ using InstructionLibrary;
 using InstructionLibrary.InstructionModels;
 
 namespace ConsoleUI {
-    class Driver {
-        static void Main(string[] args) {
-            /*
-             1. feed input
-             2. decode hex -> instruction
-             3. print instructions
-             */
-
+    public class Driver {
+        public static void Main(string[] args) {
             Console.WriteLine("Input (AS BINARY STREAM):\n\n");
             string hexString = Console.ReadLine();
             
             var instructionValues = ISADecoder.ParseToInt(hexString);
-            
+
+            List<IInstruction> instructions = ISADecoder.DecodeHex(instructionValues);
+
             string output = "";
-            
-            
-            List <IInstruction> instructions = new List<IInstruction>();
-            int[] instruction;
-
-
-            for (int i = 0; i < instructionValues.Length - 1; i++) {
-                if (instructionValues[i] == 0) {
-                    instruction = new int[1] { instructionValues[i] };
-                    // get the next digit
-                    instructions.Add(new H_Instruction(instruction));
-                }
-                if (instructionValues[i] == 10) {
-                    // get the next 4 digits now
-                    instruction = new int[4] {
-                        instructionValues[i],
-                        instructionValues[i++],
-                        instructionValues[i++],
-                        instructionValues[i++]
-                    };
-                    instructions.Add(new R_Instruction(instruction));
-                }
-                if (instructionValues[i] == 9) {
-                    // get the next 4 digits
-                    instruction = new int[4] { 
-                        instructionValues[i], 
-                        instructionValues[i++], 
-                        instructionValues[i++], 
-                        instructionValues[i++] 
-                    };
-
-                    instructions.Add(new I_Instruction(instruction));
-                }
-                //output += $"{(InstructionTable)instructionValues[i]} {instructionValues[i]} \n";
-            }
-
             foreach (var item in instructions) {
-                Console.Write($"{item.Opcode} ");
+                if (item is H_Instruction) {
+                    output += $"{item.Opcode}\n";
+                }
+                else {
+                    output += $"{item.Opcode} {item.Instruction[1]} {item.Instruction[2]} {item.Instruction[3]}\n";
+                }
             }
-
-            //Console.WriteLine(output);
+            Console.WriteLine(output);
         }
     }
 }

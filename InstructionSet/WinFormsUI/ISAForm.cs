@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using InstructionLibrary;
+using InstructionLibrary.InstructionModels;
 
 namespace WinFormsUI {
     public partial class ISAForm : Form {
@@ -16,10 +17,16 @@ namespace WinFormsUI {
             
             inputBox.Text = "1A EE 4A A1 2A AA A3 5F 00";
             var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
-
+            List<IInstruction> instructions = ISADecoder.DecodeHex(instructionValues);
+            
             string output = "";
-            for (int i = 0; i < instructionValues.Length; i++) {
-                output += $"{(InstructionTable)instructionValues[i]} {instructionValues[i]} \n";
+            foreach (var item in instructions) {
+                if (item is H_Instruction) {
+                    output += $"{item.Opcode}\n";
+                }
+                else {
+                    output += $"{item.Opcode} {item.Instruction[1]} {item.Instruction[2]} {item.Instruction[3]}\n";
+                }
             }
 
             outputBox.Text = output;

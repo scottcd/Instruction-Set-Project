@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace InstructionLibrary.InstructionModels {
     public interface IInstruction {
-        public InstructionTable Opcode { get; set; }
+        public Opcode Opcode { get; set; }
         public int[] Instruction { get; set; }
-
-        
+        public OpcodeType OpcodeType { get; set; }
     }
 }
