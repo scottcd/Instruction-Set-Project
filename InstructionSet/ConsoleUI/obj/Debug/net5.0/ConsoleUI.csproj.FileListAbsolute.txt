@@ -55,3 +55,5 @@ C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\obj
 C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\obj\Debug\net5.0\ref\ConsoleUI.dll
 C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.pdb
 C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.genruntimeconfig.cache
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\bin\Debug\net5.0\ExecutionLibrary.dll
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\bin\Debug\net5.0\ExecutionLibrary.pdb

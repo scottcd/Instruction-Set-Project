@@ -1,0 +1,15 @@
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ExecutionLibrary.deps.json
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ExecutionLibrary.dll
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ref\ExecutionLibrary.dll
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ExecutionLibrary.pdb
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\InstructionLibrary.dll
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\InstructionLibrary.pdb
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.csproj.AssemblyReference.cache
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.AssemblyInfoInputs.cache
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.AssemblyInfo.cs
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.csproj.CopyComplete
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.dll
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ref\ExecutionLibrary.dll
+C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.pdb

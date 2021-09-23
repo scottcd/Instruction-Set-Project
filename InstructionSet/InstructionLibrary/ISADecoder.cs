@@ -1,4 +1,6 @@
-﻿using InstructionLibrary.InstructionModels;
+﻿using InstructionLibrary.Models.Instructions;
+using InstructionLibrary.Interfaces;
+using InstructionLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,26 +45,22 @@ namespace InstructionLibrary {
                     // get the next digit
                     instructions.Add(new H_Instruction(instruction, opcode, opcodeType));
                 }
-                if (opcodeType == OpcodeType.R_Type) {
-                    // get the next 4 digits now
-                    instruction = new int[4] {
-                        instructionValues[i],
-                        instructionValues[i++],
-                        instructionValues[i++],
-                        instructionValues[i++]
-                    };
-                    instructions.Add(new R_Instruction(instruction, opcode, opcodeType));
-                }
-                if (opcodeType == OpcodeType.I_Type) {
-                    // get the next 4 digits
-                    instruction = new int[4] {
-                        instructionValues[i],
-                        instructionValues[i++],
-                        instructionValues[i++],
-                        instructionValues[i++]
-                    };
+                else {
+                    instruction = new int[4];
+                    instruction[0] = instructionValues[i];
+                    i++;
+                    instruction[1] = instructionValues[i];
+                    i++;
+                    instruction[2] = instructionValues[i];
+                    i++;
+                    instruction[3] = instructionValues[i];
 
-                    instructions.Add(new I_Instruction(instruction, opcode, opcodeType));
+                    if (opcodeType == OpcodeType.R_Type) {
+                        instructions.Add(new R_Instruction(instruction, opcode, opcodeType));
+                    }
+                    if (opcodeType == OpcodeType.I_Type) {
+                        instructions.Add(new I_Instruction(instruction, opcode, opcodeType));
+                    }
                 }
             }
 

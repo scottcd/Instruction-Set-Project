@@ -1,10 +1,11 @@
-﻿using System;
+﻿using InstructionLibrary.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstructionLibrary.InstructionModels {
+namespace InstructionLibrary.Models.Instructions {
     public class I_Instruction :IInstruction{
         public Opcodes Opcode { get; set; }
         public int[] Instruction { get; set; }

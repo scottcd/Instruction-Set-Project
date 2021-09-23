@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstructionLibrary {
+namespace InstructionLibrary.Models {
     public enum Registers {
         r0  = 0x0,
         r1  = 0x1,

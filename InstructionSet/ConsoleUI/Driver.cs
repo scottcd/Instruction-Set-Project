@@ -1,28 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using InstructionLibrary;
-using InstructionLibrary.InstructionModels;
+using InstructionLibrary.Models.Instructions;
+using InstructionLibrary.Interfaces;
+using ExecutionLibrary;
+using InstructionLibrary.Models;
 
 namespace ConsoleUI {
     public class Driver {
         public static void Main(string[] args) {
+            MachineState state = new MachineState();
+
             Console.WriteLine("Input (AS BINARY STREAM):\n\n");
-            string hexString = Console.ReadLine();
-            
-            var instructionValues = ISADecoder.ParseToInt(hexString);
 
-            List<IInstruction> instructions = ISADecoder.DecodeHex(instructionValues);
+            List<IInstruction> instructions = GetInstructions();
 
-            string output = "";
             foreach (var instruction in instructions) {
-                if (instruction is H_Instruction) {
-                    output += $"{instruction}\n";
-                }
-                else {
-                    output += $"{instruction}\n";
-                }
+                state.CurrentInstruction = instruction;
+                ExecuteInstruction.SwitchSelect(instruction, state);
+                Console.WriteLine(instruction);
             }
-            Console.WriteLine(output);
+            Console.WriteLine(state);
+        }
+
+
+        public static List<IInstruction> GetInstructions() {
+            string hexString = Console.ReadLine();
+
+            var instructionValues = ISADecoder.ParseToInt(hexString);
+            return ISADecoder.DecodeHex(instructionValues);
         }
     }
 }

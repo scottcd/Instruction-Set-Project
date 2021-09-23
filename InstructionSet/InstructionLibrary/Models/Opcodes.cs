@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstructionLibrary {
+namespace InstructionLibrary.Models {
     public enum Opcodes {
         add = 0x1,
         sub = 0x2,

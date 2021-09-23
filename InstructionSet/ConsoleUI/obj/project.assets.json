@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "ExecutionLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InstructionLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ExecutionLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExecutionLibrary.dll": {}
+        }
+      },
       "InstructionLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "ExecutionLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ExecutionLibrary/ExecutionLibrary.csproj",
+      "msbuildProject": "../ExecutionLibrary/ExecutionLibrary.csproj"
+    },
     "InstructionLibrary/1.0.0": {
       "type": "project",
       "path": "../InstructionLibrary/InstructionLibrary.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ExecutionLibrary >= 1.0.0",
       "InstructionLibrary >= 1.0.0"
     ]
   },
@@ -61,6 +80,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj": {
+              "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj"
+            },
             "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
               "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
             }
