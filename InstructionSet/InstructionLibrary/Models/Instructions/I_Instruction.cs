@@ -14,13 +14,13 @@ namespace InstructionLibrary.Models.Instructions {
         public int Immediate { get; set; }
         public OpcodeType OpcodeType { get; set; }
 
-        public I_Instruction(int[] hex, Opcodes opcode, OpcodeType opcodeType) {
+        public I_Instruction(int[] instruction, Opcodes opcode, OpcodeType opcodeType) {
             Opcode = opcode;
             OpcodeType = opcodeType;
-            DestinationRegister = (Registers)hex[1];
-            SourceRegister1 = (Registers)hex[2];
-            Immediate = hex[3];
-            Instruction = hex;
+            DestinationRegister = (Registers)instruction[1];
+            SourceRegister1 = (Registers)instruction[2];
+            Immediate = instruction[3];
+            Instruction = instruction;
         }
         public override string ToString() {
             return $"{Opcode}\t{DestinationRegister}\t{SourceRegister1}\t#{Immediate}";

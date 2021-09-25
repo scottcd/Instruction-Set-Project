@@ -14,14 +14,14 @@ using InstructionLibrary.Models.Instructions;
 
 namespace WinFormsUI {
     public partial class ISAForm : Form {
-        
-        
+        protected MachineState state;
+
         public ISAForm() {
             InitializeComponent();
 
-            MachineState state = new MachineState();
+            state = new MachineState();
 
-            inputBox.Text = "1A EE 4A A1 2A AA A3 5F 00";
+            inputBox.Text = "1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 00";
             var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
             List<IInstruction> instructions = ISADecoder.DecodeHex(instructionValues);
             
@@ -32,10 +32,22 @@ namespace WinFormsUI {
                 output += $"{instruction}\n";
             }
 
-
             outputBox.Text = output;
             stateBox.Text = $"{state}";
         }
 
+        private void CompileButton_Click(object sender, EventArgs e) {
+            var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
+            List<IInstruction> instructions = ISADecoder.DecodeHex(instructionValues);
+            string output = "";
+            foreach (var instruction in instructions) {
+                state.CurrentInstruction = instruction;
+                ExecuteInstruction.SwitchSelect(instruction, state);
+                output += $"{instruction}\n";
+            }
+
+            outputBox.Text = output;
+            stateBox.Text = $"{state}";
+        }
     }
 }

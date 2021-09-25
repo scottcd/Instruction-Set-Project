@@ -58,6 +58,7 @@ namespace WinFormsUI {
             this.CompileButton.TabIndex = 1;
             this.CompileButton.Text = "Compile";
             this.CompileButton.UseVisualStyleBackColor = false;
+            this.CompileButton.Click += new System.EventHandler(this.CompileButton_Click);
             // 
             // panel1
             // 

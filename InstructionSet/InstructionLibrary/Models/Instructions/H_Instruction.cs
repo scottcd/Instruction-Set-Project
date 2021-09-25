@@ -12,10 +12,10 @@ namespace InstructionLibrary.Models.Instructions {
         public OpcodeType OpcodeType { get; set; }
         public int[] Instruction { get; set; }
 
-        public H_Instruction(int[] hex, Opcodes opcode, OpcodeType opcodeType) {
+        public H_Instruction(int[] instruction, Opcodes opcode, OpcodeType opcodeType) {
             Opcode = opcode;
             OpcodeType = opcodeType;
-            Instruction = hex;
+            Instruction = instruction;
         }
 
         public override string ToString() {
