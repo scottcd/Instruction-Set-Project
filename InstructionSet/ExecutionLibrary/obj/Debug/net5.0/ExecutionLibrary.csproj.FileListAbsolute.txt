@@ -13,3 +13,20 @@ C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionL
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ref\ExecutionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ExecutionLibrary.deps.json
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ExecutionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ref\ExecutionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\InstructionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.csproj.AssemblyReference.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.GeneratedMSBuildEditorConfig.editorconfig
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.AssemblyInfoInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.AssemblyInfo.cs
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.csproj.CoreCompileInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.csproj.CopyComplete
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ref\ExecutionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\obj\Debug\net5.0\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\bin\Debug\net5.0\MemoryLibrary.pdb

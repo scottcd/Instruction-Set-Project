@@ -7,7 +7,6 @@ M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Archit
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\ConsoleUI.pdb
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\InstructionLibrary.dll
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\InstructionLibrary.pdb
-M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.csproj.AssemblyReference.cache
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.AssemblyInfoInputs.cache
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.AssemblyInfo.cs
@@ -57,3 +56,8 @@ C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\obj
 C:\Users\cdsco\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.genruntimeconfig.cache
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\bin\Debug\net5.0\ExecutionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\ConsoleUI\bin\Debug\net5.0\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\ExecutionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\obj\Debug\net5.0\ConsoleUI.csproj.AssemblyReference.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ConsoleUI\bin\Debug\net5.0\MemoryLibrary.pdb

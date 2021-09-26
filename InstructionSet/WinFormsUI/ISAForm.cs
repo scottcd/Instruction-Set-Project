@@ -12,9 +12,11 @@ using InstructionLibrary;
 using InstructionLibrary.Interfaces;
 using InstructionLibrary.Models.Instructions;
 
+
 namespace WinFormsUI {
     public partial class ISAForm : Form {
         protected MachineState state;
+
         private int currentInstruction = 0;
         protected List<IInstruction> instructions;
 
