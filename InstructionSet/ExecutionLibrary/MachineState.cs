@@ -6,6 +6,9 @@ using System.Collections.Generic;
 namespace ExecutionLibrary {
     public class MachineState {
         public Dictionary<Registers, int> MachineRegisters { get; set; }
+        public byte[] memory;
+
+
 
         public IInstruction CurrentInstruction { get; set; }
 
@@ -27,8 +30,10 @@ namespace ExecutionLibrary {
                 {Registers.r13, 0 },
                 {Registers.r14, 0 },
                 {Registers.r15, 0 },
-            };
+            }; 
+            memory = new byte[1048576];
         }
+
 
         public override string ToString() {
             string output = "";

@@ -6,10 +6,12 @@ using InstructionLibrary.Interfaces;
 using ExecutionLibrary;
 using InstructionLibrary.Models;
 
+
 namespace ConsoleUI {
     public class Driver {
         public static void Main(string[] args) {
             MachineState state = new MachineState();
+
 
             Console.WriteLine("Input (AS BINARY STREAM):\n\n");
 

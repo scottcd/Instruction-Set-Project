@@ -21,3 +21,28 @@ C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.csproj.CopyComplete
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ExecutionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.exe
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.deps.json
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.runtimeconfig.json
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.runtimeconfig.dev.json
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ref\WinFormsUI.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ExecutionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ExecutionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\InstructionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.csproj.AssemblyReference.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.ISAForm.resources
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.csproj.GenerateResource.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.GeneratedMSBuildEditorConfig.editorconfig
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.AssemblyInfoInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.AssemblyInfo.cs
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.csproj.CoreCompileInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.csproj.CopyComplete
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\ref\WinFormsUI.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.genruntimeconfig.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\MemoryLibrary.pdb
