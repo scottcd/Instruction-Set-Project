@@ -226,13 +226,7 @@ namespace ExecutionLibrary {
 
             //state.MachineRegisters[(Registers)destRegister] = mem.LoadMemory(memOffset);
         }
-                                                              + sourceImmediate;
-        }
+                                                             
 
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              * sourceImmediate;
-        }
->>>>>>>>> Temporary merge branch 2
     }
 }
