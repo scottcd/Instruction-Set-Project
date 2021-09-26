@@ -62,8 +62,75 @@ namespace ExecutionLibrary {
             }
         }
 
+        private static void Xor(R_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceRegister2 = (int)instruction.SourceRegister2;
 
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              ^ state.MachineRegisters[(Registers)sourceRegister2];
+        }
 
+        private static void Srl(I_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceImmediate = (int)instruction.Immediate;
+
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              >> sourceImmediate;
+        }
+
+        private static void Sll(I_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceImmediate = (int)instruction.Immediate;
+
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              << sourceImmediate;
+        }
+
+        private static void Ori(I_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceImmediate = (int)instruction.Immediate;
+
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              | sourceImmediate;
+        }
+
+        private static void Andi(I_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceImmediate = (int)instruction.Immediate;
+
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              & sourceImmediate;
+        }
+
+        private static void Addi(I_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceImmediate = (int)instruction.Immediate;
+
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              + sourceImmediate;
+        }
+
+        private static void Mul(I_Instruction instruction, MachineState state)
+        {
+            int destRegister = (int)instruction.DestinationRegister;
+            int sourceRegister1 = (int)instruction.SourceRegister1;
+            int sourceImmediate = (int)instruction.Immediate;
+
+            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+                                                              * sourceImmediate;
+        }
         public static void Add(R_Instruction instruction, MachineState state) {
             int destRegister = (int)instruction.DestinationRegister;
             int sourceRegister1 = (int)instruction.SourceRegister1;
@@ -160,75 +227,6 @@ namespace ExecutionLibrary {
             //state.MachineRegisters[(Registers)destRegister] = mem.LoadMemory(memOffset);
         }
 
-        private static void Xor(R_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceRegister2 = (int)instruction.SourceRegister2;
 
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              ^ state.MachineRegisters[(Registers)sourceRegister2];
-        }
-
-        private static void Srl(I_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              >> sourceImmediate;
-        }
-
-        private static void Sll(I_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              << sourceImmediate;
-
-        }
-
-        private static void Ori(I_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              | sourceImmediate;
-        }
-
-        private static void Andi(I_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              & sourceImmediate;
-        }
-
-        private static void Addi(I_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              + sourceImmediate;
-        }
-
-        private static void Mul(I_Instruction instruction, MachineState state)
-        {
-            int destRegister = (int)instruction.DestinationRegister;
-            int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
-
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
-                                                              * sourceImmediate;
-        }
     }
 }

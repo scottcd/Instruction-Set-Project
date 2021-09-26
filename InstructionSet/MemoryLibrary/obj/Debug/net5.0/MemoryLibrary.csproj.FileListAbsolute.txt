@@ -1,0 +1,15 @@
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\bin\Debug\net5.0\MemoryLibrary.deps.json
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\bin\Debug\net5.0\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\bin\Debug\net5.0\ref\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\bin\Debug\net5.0\MemoryLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\bin\Debug\net5.0\InstructionLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\bin\Debug\net5.0\InstructionLibrary.pdb
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.csproj.AssemblyReference.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.AssemblyInfoInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.AssemblyInfo.cs
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.csproj.CoreCompileInputs.cache
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.csproj.CopyComplete
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\ref\MemoryLibrary.dll
+M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\MemoryLibrary\obj\Debug\net5.0\MemoryLibrary.pdb
