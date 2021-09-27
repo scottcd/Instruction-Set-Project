@@ -1,4 +1,6 @@
 ﻿
+using System.IO;
+
 namespace WinFormsUI {
     partial class ISAForm {
         /// <summary>
@@ -31,7 +33,14 @@ namespace WinFormsUI {
             this.inputBox = new System.Windows.Forms.RichTextBox();
             this.NextButton = new System.Windows.Forms.Button();
             this.CompileButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stateBox
@@ -72,9 +81,9 @@ namespace WinFormsUI {
             this.panel1.Controls.Add(this.outputBox);
             this.panel1.Controls.Add(this.inputBox);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1211, 807);
+            this.panel1.Size = new System.Drawing.Size(1211, 792);
             this.panel1.TabIndex = 2;
             // 
             // outputBox
@@ -82,7 +91,7 @@ namespace WinFormsUI {
             this.outputBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.outputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.outputBox.DetectUrls = false;
-            this.outputBox.Location = new System.Drawing.Point(0, 400);
+            this.outputBox.Location = new System.Drawing.Point(0, 393);
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
             this.outputBox.Size = new System.Drawing.Size(1211, 407);
@@ -95,9 +104,9 @@ namespace WinFormsUI {
             this.inputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputBox.DetectUrls = false;
             this.inputBox.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.inputBox.Location = new System.Drawing.Point(0, 0);
+            this.inputBox.Location = new System.Drawing.Point(3, 3);
             this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(1211, 394);
+            this.inputBox.Size = new System.Drawing.Size(1211, 387);
             this.inputBox.TabIndex = 1;
             this.inputBox.Text = "";
             this.inputBox.TextChanged += new System.EventHandler(this.inputBox_TextChanged);
@@ -128,6 +137,53 @@ namespace WinFormsUI {
             this.CompileButton.UseVisualStyleBackColor = false;
             this.CompileButton.Click += new System.EventHandler(this.CompileButton_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1439, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loadFileToolStripMenuItem,
+            this.saveFileToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // loadFileToolStripMenuItem
+            // 
+            this.loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
+            this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.loadFileToolStripMenuItem.Text = "Load File";
+            this.loadFileToolStripMenuItem.Click += new System.EventHandler(this.LoadFileButton_Click);
+            // 
+            // saveFileToolStripMenuItem
+            // 
+            this.saveFileToolStripMenuItem.Name = "saveFileToolStripMenuItem";
+            this.saveFileToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.saveFileToolStripMenuItem.Text = "Save File";
+            this.saveFileToolStripMenuItem.Click += new System.EventHandler(this.SaveFileButton_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Text files (*.txt)|*.txt";
+            this.openFileDialog1.InitialDirectory = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\"));
+            this.openFileDialog1.Title = "Load File";
+            //
+            // saveFileDialog1
+            //
+            this.saveFileDialog1.FileName = "saveFileDialog1";
+            this.saveFileDialog1.Filter = "Text files (*.txt)|*.txt";
+            this.saveFileDialog1.InitialDirectory = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\"));
+            this.saveFileDialog1.Title = "Save File";
+            // 
             // ISAForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -139,12 +195,17 @@ namespace WinFormsUI {
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.RunButton);
             this.Controls.Add(this.stateBox);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1455, 870);
             this.MinimumSize = new System.Drawing.Size(1455, 870);
             this.Name = "ISAForm";
             this.Text = "ISA UI";
             this.panel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -157,6 +218,12 @@ namespace WinFormsUI {
         private System.Windows.Forms.RichTextBox inputBox;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Button CompileButton;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem loadFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveFileToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

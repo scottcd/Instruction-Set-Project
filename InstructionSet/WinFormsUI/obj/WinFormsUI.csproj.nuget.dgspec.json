@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {}
+    "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
+    "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
         "projectName": "InstructionLibrary",
-        "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
-        "packagesPath": "C:\\Users\\Chandler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\obj\\",
+        "projectPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
+        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Chandler\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -60,28 +54,22 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {
+    "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
+        "projectUniqueName": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
         "projectName": "WinFormsUI",
-        "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
-        "packagesPath": "C:\\Users\\Chandler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\obj\\",
+        "projectPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
+        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Chandler\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -94,8 +82,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
-                "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
+              "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
+                "projectPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
               }
             }
           }
@@ -127,7 +115,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

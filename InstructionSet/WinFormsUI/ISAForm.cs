@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -103,6 +104,29 @@ namespace WinFormsUI {
                 NextButton.FlatStyle = FlatStyle.System;
             }//end if()
         }//end NExtButton_Click(object, EventArgs)
-    
+
+        private void LoadFileButton_Click(object sender, EventArgs e)
+        {
+            if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                var fileStream = this.openFileDialog1.OpenFile();
+
+                using (StreamReader reader = new StreamReader(fileStream))
+                {
+                    inputBox.Text = reader.ReadToEnd();
+                    //var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
+                    //instructions = ISADecoder.DecodeHex(instructionValues);
+                }
+            }
+        }
+
+        private void SaveFileButton_Click(object sender, EventArgs e)
+        {
+            if (this.saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllText(this.saveFileDialog1.FileName, inputBox.Text);
+            }
+        }
+
     }
 }
