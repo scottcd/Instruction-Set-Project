@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExecutionLibrary {
-    public static class ExecuteInstruction {
+namespace InstructionLibrary {
+    public static class Executor {
         public static void SwitchSelect(IInstruction instruction, MachineState state) {
             switch (instruction.Opcode) {
                 case Opcodes.add:
@@ -118,7 +118,7 @@ namespace ExecutionLibrary {
             int sourceRegister1 = (int)instruction.SourceRegister1;
             int sourceImmediate = (int)instruction.Immediate;
 
-            state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
+            state.MachineRegisters[(Registers)destRegister] += state.MachineRegisters[(Registers)sourceRegister1]
                                                               + sourceImmediate;
         }
 

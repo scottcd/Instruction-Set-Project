@@ -25,11 +25,12 @@ namespace WinFormsUI {
         /// </summary>
         private void InitializeComponent() {
             this.stateBox = new System.Windows.Forms.RichTextBox();
-            this.CompileButton = new System.Windows.Forms.Button();
+            this.RunButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.outputBox = new System.Windows.Forms.RichTextBox();
             this.inputBox = new System.Windows.Forms.RichTextBox();
             this.NextButton = new System.Windows.Forms.Button();
+            this.CompileButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,22 +46,22 @@ namespace WinFormsUI {
             this.stateBox.Name = "stateBox";
             this.stateBox.ReadOnly = true;
             this.stateBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.stateBox.Size = new System.Drawing.Size(198, 769);
+            this.stateBox.Size = new System.Drawing.Size(198, 728);
             this.stateBox.TabIndex = 3;
             this.stateBox.Text = "";
             // 
-            // CompileButton
+            // RunButton
             // 
-            this.CompileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CompileButton.BackColor = System.Drawing.SystemColors.Menu;
-            this.CompileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CompileButton.Location = new System.Drawing.Point(1229, 787);
-            this.CompileButton.Name = "CompileButton";
-            this.CompileButton.Size = new System.Drawing.Size(92, 32);
-            this.CompileButton.TabIndex = 4;
-            this.CompileButton.Text = "Compile";
-            this.CompileButton.UseVisualStyleBackColor = false;
-            this.CompileButton.Click += new System.EventHandler(this.CompileButton_Click);
+            this.RunButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RunButton.BackColor = System.Drawing.SystemColors.Menu;
+            this.RunButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.RunButton.Location = new System.Drawing.Point(1229, 787);
+            this.RunButton.Name = "RunButton";
+            this.RunButton.Size = new System.Drawing.Size(92, 32);
+            this.RunButton.TabIndex = 4;
+            this.RunButton.Text = "Run";
+            this.RunButton.UseVisualStyleBackColor = false;
+            this.RunButton.Click += new System.EventHandler(this.RunButton_Click);
             // 
             // panel1
             // 
@@ -114,15 +115,29 @@ namespace WinFormsUI {
             this.NextButton.UseVisualStyleBackColor = false;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
+            // CompileButton
+            // 
+            this.CompileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CompileButton.BackColor = System.Drawing.SystemColors.Menu;
+            this.CompileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CompileButton.Location = new System.Drawing.Point(1229, 746);
+            this.CompileButton.Name = "CompileButton";
+            this.CompileButton.Size = new System.Drawing.Size(92, 32);
+            this.CompileButton.TabIndex = 6;
+            this.CompileButton.Text = "Compile";
+            this.CompileButton.UseVisualStyleBackColor = false;
+            this.CompileButton.Click += new System.EventHandler(this.CompileButton_Click);
+            // 
             // ISAForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1439, 831);
+            this.Controls.Add(this.CompileButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.CompileButton);
+            this.Controls.Add(this.RunButton);
             this.Controls.Add(this.stateBox);
             this.MaximumSize = new System.Drawing.Size(1455, 870);
             this.MinimumSize = new System.Drawing.Size(1455, 870);
@@ -136,11 +151,12 @@ namespace WinFormsUI {
         #endregion
 
         private System.Windows.Forms.RichTextBox stateBox;
-        private System.Windows.Forms.Button CompileButton;
+        private System.Windows.Forms.Button RunButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox outputBox;
         private System.Windows.Forms.RichTextBox inputBox;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button CompileButton;
     }
 }
 

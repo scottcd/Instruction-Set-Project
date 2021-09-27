@@ -19,7 +19,7 @@ namespace ConsoleUI {
 
             foreach (var instruction in instructions) {
                 state.CurrentInstruction = instruction;
-                ExecuteInstruction.SwitchSelect(instruction, state);
+                Executor.SwitchSelect(instruction, state);
                 Console.WriteLine(instruction);
             }
             Console.WriteLine(state);
@@ -29,8 +29,8 @@ namespace ConsoleUI {
         public static List<IInstruction> GetInstructions() {
             string hexString = Console.ReadLine();
 
-            var instructionValues = ISADecoder.ParseToInt(hexString);
-            return ISADecoder.DecodeHex(instructionValues);
+            var instructionValues = Decoder.ParseToInt(hexString);
+            return Decoder.DecodeHex(instructionValues);
         }
     }
 }

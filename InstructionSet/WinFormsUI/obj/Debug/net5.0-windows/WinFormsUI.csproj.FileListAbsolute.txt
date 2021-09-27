@@ -19,8 +19,6 @@ C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\InstructionLibrary.dll
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\InstructionLibrary.pdb
 C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\obj\Debug\net5.0-windows\WinFormsUI.csproj.CopyComplete
-C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ExecutionLibrary.dll
-C:\Users\Chandler\Source\Repos\Instruction-Set-Project\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\ExecutionLibrary.pdb
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.exe
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.deps.json
 M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\WinFormsUI\bin\Debug\net5.0-windows\WinFormsUI.runtimeconfig.json

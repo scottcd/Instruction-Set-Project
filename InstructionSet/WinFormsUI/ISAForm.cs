@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ExecutionLibrary;
 using InstructionLibrary;
 using InstructionLibrary.Interfaces;
+using InstructionLibrary.Models;
 using InstructionLibrary.Models.Instructions;
 
 
@@ -23,20 +23,20 @@ namespace WinFormsUI {
         public ISAForm() {
             InitializeComponent();
 
-            state = new MachineState();
+            //state = new MachineState();
 
             inputBox.Text = "1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 00";
-            var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
-            instructions = ISADecoder.DecodeHex(instructionValues);
+            //var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
+            //instructions = ISADecoder.DecodeHex(instructionValues);
             
-            string output = "";
-            foreach (var instruction in instructions) {
-                state.CurrentInstruction = instruction;
-                ExecuteInstruction.SwitchSelect(instruction, state);
-                output += $"{instruction}\n";
-            }
+            //string output = "";
+            //foreach (var instruction in instructions) {
+            //    state.CurrentInstruction = instruction;
+            //    //ExecuteInstruction.SwitchSelect(instruction, state);
+            //    output += $"{instruction}\n";
+            //}
 
-            outputBox.Text = output;
+            //outputBox.Text = output;
             stateBox.Text = $"{state}";
         }
 
@@ -48,19 +48,18 @@ namespace WinFormsUI {
         }//end inputBox_TextChanged(object, EventArgs)
 
         private void CompileButton_Click(object sender, EventArgs e) {
-            var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
-            instructions = ISADecoder.DecodeHex(instructionValues);
+            state = new MachineState();
+            var instructionValues = InstructionLibrary.Decoder.ParseToInt(inputBox.Text);
+            instructions = InstructionLibrary.Decoder.DecodeHex(instructionValues);
             string output = "";
             foreach (var instruction in instructions) {
                 state.CurrentInstruction = instruction;
-                ExecuteInstruction.SwitchSelect(instruction, state);
+                //ExecuteInstruction.SwitchSelect(instruction, state);
                 output += $"{instruction}\n";
             }
 
             outputBox.Text = output;
             stateBox.Text = $"{state}";
-
-            //enable the NextButton and reset currentInstruction
             NextButton.Enabled = true;
             NextButton.FlatStyle = FlatStyle.Popup;
             currentInstruction = 0;
@@ -69,10 +68,29 @@ namespace WinFormsUI {
         //event that executes the next step of the compiled code
         //gets the current instruction from the instructions list then
         //updates the form accordingly.
+        private void RunButton_Click(object sender, EventArgs e) {
+            state = new MachineState();
+            foreach (var instruction in instructions) {
+                state.CurrentInstruction = instruction;
+                Executor.SwitchSelect(instruction, state);
+            }
+
+            stateBox.Text = $"{state}";
+
+
+            //disable the NextButton and reset currentInstruction
+            NextButton.Enabled = false;
+            NextButton.FlatStyle = FlatStyle.Popup;
+            currentInstruction = 0;
+        }//end NExtButton_Click(object, EventArgs)
+
+        //event that executes the next step of the compiled code
+        //gets the current instruction from the instructions list then
+        //updates the form accordingly.
         private void NextButton_Click(object sender, EventArgs e)
         {
             state.CurrentInstruction = instructions[currentInstruction];
-            ExecuteInstruction.SwitchSelect(instructions[currentInstruction], state);
+            Executor.SwitchSelect(instructions[currentInstruction], state);
 
             stateBox.Text = $"{state}";
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace InstructionLibrary {
-    public static class ISADecoder {
+    public static class Decoder {
         /// <summary>
         /// Parses a string input of hex values into 0-16
         /// </summary>

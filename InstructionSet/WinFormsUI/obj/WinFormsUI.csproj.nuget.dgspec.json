@@ -1,79 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {}
+    "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {}
   },
   "projects": {
-    "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj": {
+    "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj",
-        "projectName": "ExecutionLibrary",
-        "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj",
-        "packagesPath": "C:\\Users\\MichaelPC\\.nuget\\packages\\",
-        "outputPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\MichaelPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
-                "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
         "projectName": "InstructionLibrary",
-        "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
-        "packagesPath": "C:\\Users\\MichaelPC\\.nuget\\packages\\",
-        "outputPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
+        "packagesPath": "C:\\Users\\Chandler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MichaelPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Chandler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -112,22 +60,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {
+    "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
+        "projectUniqueName": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
         "projectName": "WinFormsUI",
-        "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
-        "packagesPath": "C:\\Users\\MichaelPC\\.nuget\\packages\\",
-        "outputPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\WinFormsUI\\obj\\",
+        "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\WinFormsUI.csproj",
+        "packagesPath": "C:\\Users\\Chandler\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\WinFormsUI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MichaelPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Chandler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -140,11 +94,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj": {
-                "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj"
-              },
-              "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
-                "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
+              "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
+                "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
               }
             }
           }
@@ -176,7 +127,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

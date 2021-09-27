@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "ExecutionLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "InstructionLibrary": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ExecutionLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ExecutionLibrary.dll": {}
-        }
-      },
       "InstructionLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -28,11 +15,6 @@
     }
   },
   "libraries": {
-    "ExecutionLibrary/1.0.0": {
-      "type": "project",
-      "path": "../ExecutionLibrary/ExecutionLibrary.csproj",
-      "msbuildProject": "../ExecutionLibrary/ExecutionLibrary.csproj"
-    },
     "InstructionLibrary/1.0.0": {
       "type": "project",
       "path": "../InstructionLibrary/InstructionLibrary.csproj",
@@ -41,25 +23,32 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ExecutionLibrary >= 1.0.0",
       "InstructionLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MichaelPC\\.nuget\\packages\\": {}
+    "C:\\Users\\Chandler\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ConsoleUI\\ConsoleUI.csproj",
-      "packagesPath": "C:\\Users\\MichaelPC\\.nuget\\packages\\",
-      "outputPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ConsoleUI\\obj\\",
+      "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\ConsoleUI\\ConsoleUI.csproj",
+      "packagesPath": "C:\\Users\\Chandler\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MichaelPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Chandler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -72,11 +61,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj": {
-              "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\ExecutionLibrary\\ExecutionLibrary.csproj"
-            },
-            "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
-              "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
+            "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj": {
+              "projectPath": "C:\\Users\\Chandler\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj"
             }
           }
         }
@@ -105,7 +91,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

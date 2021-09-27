@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ExecutionLibrary\ExecutionLibrary.csproj" />
     <ProjectReference Include="..\InstructionLibrary\InstructionLibrary.csproj" />
   </ItemGroup>
 

@@ -12,8 +12,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstructionLibrary", "Instr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsUI", "WinFormsUI\WinFormsUI.csproj", "{96D98E46-D3F3-4607-BDA6-9C8526632F52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExecutionLibrary", "ExecutionLibrary\ExecutionLibrary.csproj", "{E880FCBD-6EC0-4747-940C-DFEC83805976}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,10 +30,6 @@ Global
 		{96D98E46-D3F3-4607-BDA6-9C8526632F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96D98E46-D3F3-4607-BDA6-9C8526632F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96D98E46-D3F3-4607-BDA6-9C8526632F52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E880FCBD-6EC0-4747-940C-DFEC83805976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E880FCBD-6EC0-4747-940C-DFEC83805976}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E880FCBD-6EC0-4747-940C-DFEC83805976}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E880FCBD-6EC0-4747-940C-DFEC83805976}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
