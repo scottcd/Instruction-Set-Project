@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 namespace InstructionLibrary {
     public static class Executor {
         public static void SwitchSelect(IInstruction instruction, MachineState state) {
+            state.MachineRegisters[(Registers)11] += 4;
+
             switch (instruction.Opcode) {
                 case Opcodes.add:
                     Add((R_Instruction)instruction, state);
@@ -19,7 +21,7 @@ namespace InstructionLibrary {
                     break;
                case Opcodes.and:
                     And((R_Instruction)instruction, state);
-                        break;
+                    break;
                case Opcodes.or:
                     Or((R_Instruction)instruction, state);
                     break;
@@ -60,6 +62,8 @@ namespace InstructionLibrary {
                     //Add((R_Instruction)instruction, state);
                     break;
             }
+            // increment pointers
+            state.MachineRegisters[0] = 0;
         }
 
         private static void Xor(R_Instruction instruction, MachineState state)
@@ -219,10 +223,12 @@ namespace InstructionLibrary {
         {
             int destRegister = (int)instruction.DestinationRegister;
             int sourceRegister1 = (int)instruction.SourceRegister1;
-            int sourceImmediate = (int)instruction.Immediate;
+            int destination = (int)instruction.Immediate;
 
-            int memOffset = sourceRegister1 + sourceImmediate;
-
+            if (destRegister == sourceRegister1) {
+            // branch
+            state.MachineRegisters[(Registers)11] = destination;
+            }
 
             //state.MachineRegisters[(Registers)destRegister] = mem.LoadMemory(memOffset);
         }

@@ -23,21 +23,8 @@ namespace WinFormsUI {
 
         public ISAForm() {
             InitializeComponent();
-
-            //state = new MachineState();
-
             inputBox.Text = "1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 00";
-            //var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
-            //instructions = ISADecoder.DecodeHex(instructionValues);
-            
-            //string output = "";
-            //foreach (var instruction in instructions) {
-            //    state.CurrentInstruction = instruction;
-            //    //ExecuteInstruction.SwitchSelect(instruction, state);
-            //    output += $"{instruction}\n";
-            //}
-
-            //outputBox.Text = output;
+           
             stateBox.Text = $"{state}";
         }
 
@@ -74,10 +61,10 @@ namespace WinFormsUI {
             foreach (var instruction in instructions) {
                 state.CurrentInstruction = instruction;
                 Executor.SwitchSelect(instruction, state);
+                currentInstruction = state.MachineRegisters[(Registers)11] / 4;
             }
 
-            stateBox.Text = $"{state}";
-
+            stateBox.Text = $"{state} \nResults: {state.MachineRegisters[(Registers)15]}";
 
             //disable the NextButton and reset currentInstruction
             NextButton.Enabled = false;
@@ -92,12 +79,11 @@ namespace WinFormsUI {
         {
             state.CurrentInstruction = instructions[currentInstruction];
             Executor.SwitchSelect(instructions[currentInstruction], state);
-
             stateBox.Text = $"{state}";
+            currentInstruction = state.MachineRegisters[(Registers)11] / 4;
 
             //prevents step through if the end
             //of the instructions list has been reached.
-            currentInstruction++;
             if (currentInstruction >= instructions.Count) 
             {
                 NextButton.Enabled = false;
@@ -111,13 +97,13 @@ namespace WinFormsUI {
             {
                 var fileStream = this.openFileDialog1.OpenFile();
 
-                using (StreamReader reader = new StreamReader(fileStream))
-                {
-                    inputBox.Text = reader.ReadToEnd();
-                    //var instructionValues = ISADecoder.ParseToInt(inputBox.Text);
-                    //instructions = ISADecoder.DecodeHex(instructionValues);
-                }
+                using StreamReader reader = new StreamReader(fileStream);
+                inputBox.Text = reader.ReadToEnd();
             }
+            RunButton.Enabled = false;
+            RunButton.FlatStyle = FlatStyle.System;
+            NextButton.Enabled = false;
+            NextButton.FlatStyle = FlatStyle.System;
         }
 
         private void SaveFileButton_Click(object sender, EventArgs e)
