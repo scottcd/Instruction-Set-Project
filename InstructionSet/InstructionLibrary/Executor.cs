@@ -184,10 +184,11 @@ namespace InstructionLibrary {
             
             state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)sourceRegister1]
                                                               ^ state.MachineRegisters[(Registers)sourceRegister2];
-            //state.MachineRegisters[(Registers)destRegister] = state.MachineRegisters[(Registers)destRegister]
+            state.MachineRegisters[(Registers)destRegister] = ~state.MachineRegisters[(Registers)destRegister];
         }
-
         
+
+
         public static void Lw(I_Instruction instruction, MachineState state)
         {
             int destRegister = (int)instruction.DestinationRegister;
