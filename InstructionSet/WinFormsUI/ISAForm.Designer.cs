@@ -63,6 +63,7 @@ namespace WinFormsUI {
             // 
             this.RunButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.RunButton.BackColor = System.Drawing.SystemColors.Menu;
+            this.RunButton.Enabled = false;
             this.RunButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RunButton.Location = new System.Drawing.Point(1229, 787);
             this.RunButton.Name = "RunButton";
@@ -174,14 +175,14 @@ namespace WinFormsUI {
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Text files (*.txt)|*.txt";
-            this.openFileDialog1.InitialDirectory = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\"));
+            this.openFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\";
             this.openFileDialog1.Title = "Load File";
-            //
+            // 
             // saveFileDialog1
-            //
+            // 
             this.saveFileDialog1.FileName = "saveFileDialog1";
             this.saveFileDialog1.Filter = "Text files (*.txt)|*.txt";
-            this.saveFileDialog1.InitialDirectory = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\"));
+            this.saveFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\";
             this.saveFileDialog1.Title = "Save File";
             // 
             // ISAForm
