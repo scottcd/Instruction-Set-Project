@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace InstructionLibrary {
     public static class Executor {
         public static void SwitchSelect(IInstruction instruction, MachineState state) {
+
             state.MachineRegisters[(Registers)11] += 4;
 
             switch (instruction.Opcode) {
@@ -61,6 +62,7 @@ namespace InstructionLibrary {
                 default:
                     //Add((R_Instruction)instruction, state);
                     break;
+
             }
             // increment pointers
             state.MachineRegisters[0] = 0;
@@ -226,12 +228,20 @@ namespace InstructionLibrary {
             int sourceRegister1 = (int)instruction.SourceRegister1;
             int destination = (int)instruction.Immediate;
 
-            if (state.MachineRegisters[(Registers)destRegister] == state.MachineRegisters[(Registers)sourceRegister1]) {
-            // branch
-            state.MachineRegisters[(Registers)11] += destination;
+            if (state.MachineRegisters[(Registers)destRegister] == state.MachineRegisters[(Registers)sourceRegister1])
+            {
+                if (destination == 8)
+                    destination = 0;
+                else if(destination > 8)
+                {
+                    destination = (8 - destination) - 1;
+                }
+
+                destination *= 4;
+                state.MachineRegisters[(Registers)11] += destination;
+                   
             }
 
-            //state.MachineRegisters[(Registers)destRegister] = mem.LoadMemory(memOffset);
         }
                                                              
 

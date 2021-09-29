@@ -10,8 +10,4 @@
     <ProjectReference Include="..\InstructionLibrary\InstructionLibrary.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Files\" />
-  </ItemGroup>
-
 </Project>
