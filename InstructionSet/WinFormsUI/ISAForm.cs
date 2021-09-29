@@ -134,6 +134,8 @@ namespace WinFormsUI {
                     {
                         if (higherNible == 0)
                         {
+                            lint.Add((int)lowerNibble);
+                            inputBox.Text += lowerNibble.ToString("X") + " ";
                             break;
                         }
                         instruct += 4;
