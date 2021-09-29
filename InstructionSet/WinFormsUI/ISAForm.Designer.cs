@@ -51,11 +51,11 @@ namespace WinFormsUI {
             this.stateBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.stateBox.DetectUrls = false;
             this.stateBox.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.stateBox.Location = new System.Drawing.Point(1229, 12);
+            this.stateBox.Location = new System.Drawing.Point(822, 27);
             this.stateBox.Name = "stateBox";
             this.stateBox.ReadOnly = true;
-            this.stateBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.stateBox.Size = new System.Drawing.Size(198, 728);
+            this.stateBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.stateBox.Size = new System.Drawing.Size(198, 425);
             this.stateBox.TabIndex = 3;
             this.stateBox.Text = "";
             // 
@@ -64,8 +64,8 @@ namespace WinFormsUI {
             this.RunButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.RunButton.BackColor = System.Drawing.SystemColors.Menu;
             this.RunButton.Enabled = false;
-            this.RunButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RunButton.Location = new System.Drawing.Point(1229, 787);
+            this.RunButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.RunButton.Location = new System.Drawing.Point(822, 499);
             this.RunButton.Name = "RunButton";
             this.RunButton.Size = new System.Drawing.Size(92, 32);
             this.RunButton.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace WinFormsUI {
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(12, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1211, 792);
+            this.panel1.Size = new System.Drawing.Size(804, 504);
             this.panel1.TabIndex = 2;
             // 
             // outputBox
@@ -92,10 +92,11 @@ namespace WinFormsUI {
             this.outputBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.outputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.outputBox.DetectUrls = false;
-            this.outputBox.Location = new System.Drawing.Point(0, 393);
+            this.outputBox.Location = new System.Drawing.Point(0, 249);
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
-            this.outputBox.Size = new System.Drawing.Size(1211, 407);
+            this.outputBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.outputBox.Size = new System.Drawing.Size(804, 255);
             this.outputBox.TabIndex = 2;
             this.outputBox.Text = "";
             // 
@@ -104,11 +105,12 @@ namespace WinFormsUI {
             this.inputBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.inputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputBox.DetectUrls = false;
-            this.inputBox.Enabled = false;
-            this.inputBox.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.inputBox.Location = new System.Drawing.Point(3, 3);
+            this.inputBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.inputBox.Location = new System.Drawing.Point(0, 0);
             this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(1211, 387);
+            this.inputBox.ReadOnly = true;
+            this.inputBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.inputBox.Size = new System.Drawing.Size(804, 243);
             this.inputBox.TabIndex = 1;
             this.inputBox.Text = "";
             this.inputBox.TextChanged += new System.EventHandler(this.inputBox_TextChanged);
@@ -117,12 +119,13 @@ namespace WinFormsUI {
             // 
             this.NextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.NextButton.BackColor = System.Drawing.SystemColors.Menu;
-            this.NextButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.NextButton.Location = new System.Drawing.Point(1339, 787);
+            this.NextButton.Enabled = false;
+            this.NextButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.NextButton.Location = new System.Drawing.Point(932, 499);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(88, 32);
             this.NextButton.TabIndex = 5;
-            this.NextButton.Text = "Next Step";
+            this.NextButton.Text = "Step Through";
             this.NextButton.UseVisualStyleBackColor = false;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
@@ -132,7 +135,7 @@ namespace WinFormsUI {
             this.CompileButton.BackColor = System.Drawing.SystemColors.Menu;
             this.CompileButton.Enabled = false;
             this.CompileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CompileButton.Location = new System.Drawing.Point(1229, 746);
+            this.CompileButton.Location = new System.Drawing.Point(822, 458);
             this.CompileButton.Name = "CompileButton";
             this.CompileButton.Size = new System.Drawing.Size(92, 32);
             this.CompileButton.TabIndex = 6;
@@ -146,7 +149,7 @@ namespace WinFormsUI {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1439, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1032, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -188,7 +191,7 @@ namespace WinFormsUI {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1439, 831);
+            this.ClientSize = new System.Drawing.Size(1032, 543);
             this.Controls.Add(this.CompileButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.panel1);
@@ -196,8 +199,8 @@ namespace WinFormsUI {
             this.Controls.Add(this.stateBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1455, 870);
-            this.MinimumSize = new System.Drawing.Size(1455, 870);
+            this.MaximumSize = new System.Drawing.Size(1048, 582);
+            this.MinimumSize = new System.Drawing.Size(1048, 582);
             this.Name = "ISAForm";
             this.Text = "ISA UI";
             this.panel1.ResumeLayout(false);

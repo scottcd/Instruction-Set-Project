@@ -66,6 +66,7 @@ namespace WinFormsUI {
                 NextButton.Enabled = true;
                 RunButton.Enabled = true;
 
+                RunButton.FlatStyle = FlatStyle.Popup;
                 NextButton.FlatStyle = FlatStyle.Popup;
                 currentInstruction = 0;                
             }
@@ -87,9 +88,9 @@ namespace WinFormsUI {
 
             //disable the NextButton and reset currentInstruction
             NextButton.Enabled = false;
-            NextButton.FlatStyle = FlatStyle.Popup;
+            NextButton.FlatStyle = FlatStyle.System;
             currentInstruction = 0;
-        }//end NExtButton_Click(object, EventArgs)
+        }//end RunButton_Click(object, EventArgs)
 
         //event that executes the next step of the compiled code
         //gets the current instruction from the instructions list then
@@ -108,7 +109,7 @@ namespace WinFormsUI {
                 NextButton.Enabled = false;
                 NextButton.FlatStyle = FlatStyle.System;
             }//end if()
-        }//end NExtButton_Click(object, EventArgs)
+        }//end NextButton_Click(object, EventArgs)
 
         private void LoadFileButton_Click(object sender, EventArgs e)
         {
