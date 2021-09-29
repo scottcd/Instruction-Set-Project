@@ -195,7 +195,7 @@ namespace InstructionLibrary {
             int sourceRegister1 = (int)instruction.SourceRegister1;
             int sourceImmediate = (int)instruction.Immediate;
 
-            int memOffset = sourceRegister1 + sourceImmediate;
+            int memOffset = state.MachineRegisters[(Registers)sourceRegister1] + sourceImmediate;
 
             int lWord = BitConverter.ToInt16(state.memory, memOffset);
 
@@ -209,7 +209,7 @@ namespace InstructionLibrary {
             int sourceRegister1 = (int)instruction.SourceRegister1;
             int sourceImmediate = (int)instruction.Immediate;
 
-            int memOffset = sourceRegister1 + sourceImmediate;
+            int memOffset = state.MachineRegisters[(Registers)sourceRegister1] + sourceImmediate;
 
             short var = (short)state.MachineRegisters[(Registers)destRegister];
             byte low = (byte)(var & 0x0f);  // Take just the lowest 8 bits.
@@ -226,9 +226,9 @@ namespace InstructionLibrary {
             int sourceRegister1 = (int)instruction.SourceRegister1;
             int destination = (int)instruction.Immediate;
 
-            if (destRegister == sourceRegister1) {
+            if (state.MachineRegisters[(Registers)destRegister] == state.MachineRegisters[(Registers)sourceRegister1]) {
             // branch
-            state.MachineRegisters[(Registers)11] = destination;
+            state.MachineRegisters[(Registers)11] += destination;
             }
 
             //state.MachineRegisters[(Registers)destRegister] = mem.LoadMemory(memOffset);

@@ -23,7 +23,7 @@ namespace WinFormsUI {
 
         public ISAForm() {
             InitializeComponent();
-            inputBox.Text = "1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 00";
+            //inputBox.Text = "1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 00";
            
             stateBox.Text = $"{state}";
         }
@@ -37,20 +37,26 @@ namespace WinFormsUI {
 
         private void CompileButton_Click(object sender, EventArgs e) {
             state = new MachineState();
-            var instructionValues = InstructionLibrary.Decoder.ParseToInt(inputBox.Text);
-            instructions = InstructionLibrary.Decoder.DecodeHex(instructionValues);
-            string output = "";
-            foreach (var instruction in instructions) {
-                state.CurrentInstruction = instruction;
-                //ExecuteInstruction.SwitchSelect(instruction, state);
-                output += $"{instruction}\n";
+            if(inputBox.Text.Length != 0)
+            {
+                var instructionValues = InstructionLibrary.Decoder.ParseToInt(inputBox.Text);
+                instructions = InstructionLibrary.Decoder.DecodeHex(instructionValues);
+                string output = "";
+                foreach (var instruction in instructions) {
+                    state.CurrentInstruction = instruction;
+                    //ExecuteInstruction.SwitchSelect(instruction, state);
+                    output += $"{instruction}\n";
+                }
+
+                outputBox.Text = output;
+                stateBox.Text = $"{state}";
+                NextButton.Enabled = true;
+                RunButton.Enabled = true;
+
+                NextButton.FlatStyle = FlatStyle.Popup;
+                currentInstruction = 0;                
             }
 
-            outputBox.Text = output;
-            stateBox.Text = $"{state}";
-            NextButton.Enabled = true;
-            NextButton.FlatStyle = FlatStyle.Popup;
-            currentInstruction = 0;
         }
 
         //event that executes the next step of the compiled code
