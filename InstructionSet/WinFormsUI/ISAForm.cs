@@ -21,11 +21,19 @@ namespace WinFormsUI {
         private int currentInstruction = 0;
         protected List<IInstruction> instructions;
 
+        private List<int> lint = new List<int>();
+
+    
+
         public ISAForm() {
             InitializeComponent();
             //inputBox.Text = "1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 1A EE 4A A1 2A AA A3 5F 00";
-           
+
+            CompileButton.Enabled = false;
+            CompileButton.FlatStyle = FlatStyle.System;
             stateBox.Text = $"{state}";
+
+            
         }
 
         //simple event to prevent step through if the code hasn't been compiled
@@ -39,8 +47,10 @@ namespace WinFormsUI {
             state = new MachineState();
             if(inputBox.Text.Length != 0)
             {
-                var instructionValues = InstructionLibrary.Decoder.ParseToInt(inputBox.Text);
-                instructions = InstructionLibrary.Decoder.DecodeHex(instructionValues);
+
+                //var instructionValues = InstructionLibrary.Decoder.ParseToInt(inputBox.Text);
+
+                instructions = InstructionLibrary.Decoder.DecodeHex(lint.ToArray());
                 string output = "";
                 foreach (var instruction in instructions) {
                     state.CurrentInstruction = instruction;
@@ -103,13 +113,49 @@ namespace WinFormsUI {
             {
                 var fileStream = this.openFileDialog1.OpenFile();
 
-                using StreamReader reader = new StreamReader(fileStream);
-                inputBox.Text = reader.ReadToEnd();
+                int[] parsedHex;
+
+                BinaryReader binReader = new BinaryReader(fileStream);
+
+                int i = 0;
+                int instruct = 0;
+
+                while (true)
+                {
+                    byte newByte = binReader.ReadByte();
+                    byte lowerNibble = (byte)(newByte & 0x0f);  // Take just the lowest 8 bits.
+                    byte higherNible = (byte)(newByte >> 4);
+
+                    lint.Add((int)higherNible);
+
+                    inputBox.Text += higherNible.ToString("X");
+
+                    if (i == instruct)
+                    {
+                        if (higherNible == 0)
+                        {
+                            break;
+                        }
+                        instruct += 4;
+
+                    }
+
+                    i++;
+                    lint.Add((int)lowerNibble);
+
+                    inputBox.Text += lowerNibble.ToString("X") + " ";
+                    i++;
+
+                }
+
+                
             }
             RunButton.Enabled = false;
             RunButton.FlatStyle = FlatStyle.System;
             NextButton.Enabled = false;
             NextButton.FlatStyle = FlatStyle.System;
+            CompileButton.Enabled = true;
+            CompileButton.FlatStyle = FlatStyle.Popup;
         }
 
         private void SaveFileButton_Click(object sender, EventArgs e)
