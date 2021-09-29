@@ -176,13 +176,11 @@ namespace WinFormsUI {
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\";
             this.openFileDialog1.Title = "Load File";
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileName = "saveFileDialog1";
-            this.saveFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\";
             this.saveFileDialog1.Title = "Save File";
             // 
             // ISAForm

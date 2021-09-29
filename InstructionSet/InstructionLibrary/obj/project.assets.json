@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\MichaelPC\\.nuget\\packages\\": {}
+    "C:\\Users\\brand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
       "projectName": "InstructionLibrary",
-      "projectPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
-      "packagesPath": "C:\\Users\\MichaelPC\\.nuget\\packages\\",
-      "outputPath": "M:\\ETSUFiles\\OneDrive - East Tennessee State University\\Fall2021\\Computer Architecture\\Proj1\\InstructionSet\\InstructionLibrary\\obj\\",
+      "projectPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\InstructionLibrary.csproj",
+      "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\brand\\Source\\Repos\\Instruction-Set-Project\\InstructionSet\\InstructionLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MichaelPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

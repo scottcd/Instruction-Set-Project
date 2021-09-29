@@ -232,10 +232,10 @@ namespace InstructionLibrary {
             {
                 if (destination == 8)
                     destination = 0;
-                else if(destination > 8)
-                {
+                else if (destination > 8)
                     destination = (8 - destination) - 1;
-                }
+                else if (destination < 8)
+                    destination -= 1; ;
 
                 destination *= 4;
                 state.MachineRegisters[(Registers)11] += destination;

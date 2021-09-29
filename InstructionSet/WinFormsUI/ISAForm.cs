@@ -52,10 +52,13 @@ namespace WinFormsUI {
 
                 instructions = InstructionLibrary.Decoder.DecodeHex(lint.ToArray());
                 string output = "";
+                int i = 0;
                 foreach (var instruction in instructions) {
+                    output += i.ToString("X4") + "\t";
                     state.CurrentInstruction = instruction;
                     //ExecuteInstruction.SwitchSelect(instruction, state);
                     output += $"{instruction}\n";
+                    i += 4;
                 }
 
                 outputBox.Text = output;
@@ -111,6 +114,10 @@ namespace WinFormsUI {
         {
             if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+
+                lint.Clear();
+                inputBox.Text = "";
+
                 var fileStream = this.openFileDialog1.OpenFile();
 
                 int[] parsedHex;

@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ExecutionLibrary
-build_property.ProjectDir = M:\ETSUFiles\OneDrive - East Tennessee State University\Fall2021\Computer Architecture\Proj1\InstructionSet\ExecutionLibrary\
+build_property.ProjectDir = C:\Users\brand\Source\Repos\Instruction-Set-Project\InstructionSet\ExecutionLibrary\
