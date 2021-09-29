@@ -2,6 +2,7 @@
 using InstructionLibrary.Interfaces;
 using InstructionLibrary.Models;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,22 @@ using System.Threading.Tasks;
 
 namespace InstructionLibrary {
     public static class Decoder {
+        /*
         /// <summary>
         /// Parses a string input of hex values into 0-16
         /// </summary>
         /// <param name="hexString">User input (string of hex digits)</param>
         /// <returns>An integer array of 4-bit instruction values</returns>
-        public static int[] ParseToInt(string hexString) {
+        public static int[] ParseToInt(Binary hexString) {
+
+            
+
+
+
+
+
+
+            
             char[] unparsedArray = hexString.ToCharArray()
                                             .Where(c => !Char.IsWhiteSpace(c))
                                             .ToArray();
@@ -25,8 +36,13 @@ namespace InstructionLibrary {
             }
 
             return parsedHex;
-        }
 
+            
+            
+            return parsedHex = lint.ToArray();
+        
+        }*/
+        
         /// <summary>
         /// Takes 0 - 15 integers as input and translates to instructions
         /// </summary>

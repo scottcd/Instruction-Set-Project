@@ -104,6 +104,7 @@ namespace WinFormsUI {
             this.inputBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.inputBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputBox.DetectUrls = false;
+            this.inputBox.Enabled = false;
             this.inputBox.ImeMode = System.Windows.Forms.ImeMode.On;
             this.inputBox.Location = new System.Drawing.Point(3, 3);
             this.inputBox.Name = "inputBox";
@@ -129,6 +130,7 @@ namespace WinFormsUI {
             // 
             this.CompileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CompileButton.BackColor = System.Drawing.SystemColors.Menu;
+            this.CompileButton.Enabled = false;
             this.CompileButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CompileButton.Location = new System.Drawing.Point(1229, 746);
             this.CompileButton.Name = "CompileButton";
@@ -174,14 +176,12 @@ namespace WinFormsUI {
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "Text files (*.txt)|*.txt";
             this.openFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\";
             this.openFileDialog1.Title = "Load File";
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileName = "saveFileDialog1";
-            this.saveFileDialog1.Filter = "Text files (*.txt)|*.txt";
             this.saveFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\";
             this.saveFileDialog1.Title = "Save File";
             // 

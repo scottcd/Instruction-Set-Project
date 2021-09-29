@@ -30,7 +30,7 @@ namespace ConsoleUI {
         public static List<IInstruction> GetInstructions() {
             string hexString = Console.ReadLine();
 
-            var instructionValues = Decoder.ParseToInt(hexString);
+            //var instructionValues = Decoder.ParseToInt(hexString);
             return Decoder.DecodeHex(instructionValues);
         }
     }
